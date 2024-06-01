@@ -6,6 +6,10 @@ const links = [
     link: "https://github.com/kadoshita/datastore-storage-size-calculator",
     label: "GitHub",
   },
+  {
+    link: "https://cloud.google.com/datastore/docs/concepts/storage-size",
+    label: "Official documentation",
+  },
 ];
 
 export function Header() {
@@ -17,7 +21,7 @@ export function Header() {
 
   return (
     <header className={classes.header}>
-      <Container size="md" className={classes.inner}>
+      <Container fluid size="md" className={classes.inner}>
         <h1>Datastore storage size calculator</h1>
         <Group gap={5} visibleFrom="xs">
           {items}
