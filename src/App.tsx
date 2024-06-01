@@ -1,10 +1,15 @@
-import { useState } from "react";
+import { MantineProvider } from "@mantine/core";
+import { Header } from "./ui/header";
+import { Calculator } from "./ui/calculator";
+
+import "@mantine/core/styles.css";
 
 function App() {
   return (
-    <>
-      <h1>Datastore storage size calculator</h1>
-    </>
+    <MantineProvider>
+      <Header></Header>
+      <Calculator></Calculator>
+    </MantineProvider>
   );
 }
 
