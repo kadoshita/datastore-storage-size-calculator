@@ -5,11 +5,13 @@ import {
   JsonInput,
   TextInput,
   Text,
+  Alert,
 } from "@mantine/core";
 import { ChangeEventHandler, MouseEventHandler, useState } from "react";
 import classes from "./index.module.css";
 import { KeyProperty } from "../../calculator/properties/key";
 import { calculate } from "../../calculator";
+import { IconInfoCircle } from "@tabler/icons-react";
 
 export function Calculator() {
   const [namespace, setNamespace] = useState("");
@@ -133,6 +135,15 @@ export function Calculator() {
       <Text>Key Size: {keySize} Byte</Text>
       <Text>Entity Size: {entitySize} Byte</Text>
       <Text>Total Size: {keySize + entitySize} Byte</Text>
+      <Alert
+        variant="light"
+        color="blue"
+        title="Note"
+        icon={<IconInfoCircle></IconInfoCircle>}
+      >
+        This is an unofficial tool, and the author does not guarantee the
+        accuracy of its results.
+      </Alert>
       <Button onClick={handleSubmit} className={classes.submitButton}>
         Calculate
       </Button>
