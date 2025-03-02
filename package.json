@@ -24,9 +24,9 @@
     "vitest": "^3.0.7"
   },
   "dependencies": {
-    "@mantine/core": "^7.16.2",
+    "@mantine/core": "^7.17.1",
     "@mantine/hooks": "^7.10.1",
-    "@tabler/icons-react": "^3.29.0",
+    "@tabler/icons-react": "^3.30.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   }
