@@ -13,8 +13,8 @@
   "author": "sublimer <sublimer.me@gmail.com> (https://sublimer.me/)",
   "license": "MIT",
   "devDependencies": {
-    "@types/react": "^19.1.17",
-    "@types/react-dom": "^19.1.11",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
     "@vitejs/plugin-react": "^5.0.4",
     "postcss": "^8.5.6",
     "postcss-preset-mantine": "^1.18.0",
@@ -24,10 +24,10 @@
     "vitest": "^3.2.4"
   },
   "dependencies": {
-    "@mantine/core": "^8.3.2",
+    "@mantine/core": "^8.3.6",
     "@mantine/hooks": "^8.0.2",
     "@tabler/icons-react": "^3.35.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   }
 }
