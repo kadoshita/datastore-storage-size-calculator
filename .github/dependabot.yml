@@ -4,21 +4,18 @@ updates:
     directory: "/"
     schedule:
       interval: "monthly"
-    open-pull-requests-limit: 10
     groups:
-      production:
-        dependency-type: "production"
-        update-types:
-          - "minor"
-          - "patch"
-      production-breaking:
-        dependency-type: "production"
-        update-types:
-          - "major"
-      development:
-        dependency-type: "development"
+      npm-dependencies:
+        patterns:
+          - '*'
+    ignore:
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "monthly"
-    open-pull-requests-limit: 10
+    groups:
+      github-actions:
+        patterns:
+          - '*'
